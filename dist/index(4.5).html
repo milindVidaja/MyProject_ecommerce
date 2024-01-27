@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-1 flex-col m-0 p-0">
+    <div class="flex flex-col gap-10 mx-5">
+        <!-- Image 1 (Desktop View) -->
+        <div class="order-1 md:order-2 lg:order-2 xl:order-2 flex-1 md:ml-40 p-20">
+            <div class="font-normal text-[2.5rem] sm:text-[1.5rem] md:text-[1.5rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[3.5rem]">
+                <h1 class="mb-5">
+                    BEAUTIFUL VINTAGE<br />JEWELLERY FROM<br />
+                    <em>the</em> HOUSE <em>Of Dior</em>
+                </h1>
+            </div>
+
+            <!-- Text -->
+            <div class="mb-4">
+                <h2 class="font-bold text-lg mt-2 mb-2">Gold Wrist Love</h2>
+                <p class="text-lg mb-2">By Ariashi</p>
+                <p class="text-lg">$ 750.00 USD</p>
+            </div>
+
+            <!-- Button -->
+            <div class="order-3">
+                <button class="text-[15px] absolute bg-white text-black cursor-pointer opacity-0 w-[150px] z-[1] mx-auto px-3 py-2 rounded-[100px] border-[none] left-0 right-0 bottom-10% hover:bg-black hover:text-white">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+
+        <!-- Image 2 (Mobile and Tablet View) -->
+        <div class="md:order-1 lg:order-1 xl:order-1">
+            <div class="relative w-full h-3/6 md:overflow-hidden md:group lg:group xl:group">
+                <img class="relative w-full h-full transition-transform duration-[0.3s] ease-[ease-in-out] md:origin-center lg:origin-center xl:origin-center transform md:group-hover:scale-105 lg:group-hover:scale-105 xl:group-hover:scale-105"
+                    src="./jewellery.png" alt="Jewellery" />
+                <button class="absolute bottom-4 left-4 bg-white hover:bg-black text-black hover:text-white font-bold py-2 px-8 rounded-full transition-all duration-300 opacity-0 md:group-hover:opacity-100 lg:group-hover:opacity-100 xl:group-hover:opacity-100"
+                    onmouseover="document.querySelector('.transform').classList.remove('md:group-hover:scale-105', 'lg:group-hover:scale-105', 'xl:group-hover:scale-105')"
+                    onmouseout="document.querySelector('.transform').classList.add('md:group-hover:scale-105', 'lg:group-hover:scale-105', 'xl:group-hover:scale-105')">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
