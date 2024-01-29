@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-1 flex-col m-0 p-0">
+    <div class="flex flex-wrap gap-[50px]">
+        <!-- Left Side (Product Title, Product Image, Product Description) -->
+        <div class="order-1 flex-1 flex flex-col justify-center ml-[10%] p-5">
+            <div class="text-[2.5rem] sm:text-[1.5rem] md:text-[1.5rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[1.5rem] font-medium leading-[5%] whitespace-normal">
+                <p class="mb-5">BEAUTIFUL VINTAGE</p>
+                <p class="mb-5">JEWELLERY FROM <em>the</em></p>
+                <p>HOUSE <em>of Dior</em></p>
+            </div>
+            <div class="relative w-6/12 h-4/5 overflow-hidden">
+                <button class="text-[15px] absolute translate-x-[-100%,1150%] bg-white text-black cursor-pointer opacity-0 w-[150px] z-[1] ml-[250px] px-3 py-2 rounded-[100px] border-[none] left-[43%] bottom-[98%] hover:bg-black hover:text-white" >ADD TO CART</button>
+                <div class="relative z-[2]">
+                    <img class="relative w-full h-3/6 transition-transform duration-[0.3s] ease-[ease-in-out] origin-[center_center]" src="jewellery.png" alt="Jewellery">
+                </div>
+                <div class="">
+                    <h2>Gold Wrist Love</h2>
+                    <p>By Ariashi</p>
+                    <p>$ 750.00 USD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side (Image with no margins) -->
+        <div class="order-2 flex-1 p-5">
+            <img class="max-w-full h-full" src="earings_model.webp" alt="model">
+        </div>
+    </div>
+</body>
+</html>

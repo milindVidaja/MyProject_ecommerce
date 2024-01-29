@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+    <div class="flex flex-col">
+        <!-- Left Side (Product Title, Product Image, Product Description) -->
+        <div class="flex flex-col mr-4">
+            <!-- Product Title -->
+            <!-- <p class="text-xl mb-4">BEAUTIFUL VINTAGE</p>
+            <p class="text-xl mb-4">JEWELLERY FROM <em>the</em></p>
+            <p class="text-xl mb-4">HOUSE <em> of Dior</em></p> -->
+            <h1 class="text-3xl pl-4">
+                BEAUTIFUL VINTAGE <br>
+                JEWELLERY FROM <br><em>the</em> HOUSE <em>of Dior</em>
+            </h1>
+
+            <!-- Product Image -->
+            <img src="jewellery.jpg" alt="Product Image" class="w-full h-auto mb-4 xl:h-">
+            <!-- Product Description -->
+            <p class="text-sm">Gold Wrist Love</p>
+            <p class="text-sm">By Ariashi</p>
+            <p class="text-sm">$ 750.00 USD</p>
+        </div>
+
+        <!-- Right Side (Image with no margins) -->
+        <div>
+            <img src="earings_model.webp" alt="Side Image" class="ml-auto">
+            <!-- "w-full h-full object-cover" -->
+        </div>
+    </div>
+</body>
+</html>
