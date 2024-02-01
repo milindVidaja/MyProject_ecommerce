@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyComponent</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flex flex-col md:flex-row">
+        <div class="content-center flex flex-col justify-center justify-items-center">
+            <div class=" flex flex-col ">
+                <h1 class="text-4xl font mt-4 text-center">BEAUTIFUL VINTAGE<br> JEWELLERY from <br><span class="italic">the</span> HOUSE<span class="italic"> of Dior</span></h1>
+            </div>
+            <div class="items-center order-2 flex flex-col">
+                <img src="jewellery.png" alt="product" class="w-[307.4px] h-[424px] rounded-lg items-center justify-center">
+                <button>ADD TO CART</button>
+            </div>
+            <div class="items-start order-3 flex flex-col">
+                <p class="text-lg">Gold Wrist Love</p> 
+                <p class="text-lg">By Ariashi</p>
+                <p class="text-lg">$ 750.00 USD</p>
+            </div>
+        </div>
+       
+        <div class="justify-between justify-items-end order-first gap-4 md:order-last lg:order-last flex flex-col">
+            <img src="earings_model.webp" alt="Model" class="float-right">
+        </div> 
+    </div>   
+</body>
+</html>

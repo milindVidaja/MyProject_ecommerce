@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyComponent</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .crop-container {
+            position: relative;
+            overflow: hidden;
+            height: 300px; /* Set your desired height */
+            width: 60%; /* Set your desired width */
+            margin: 0 auto;
+        }
+
+        .crop-container:hover img {
+            transform: scale(1.2); /* Adjust the scale factor as needed */
+        }
+
+        /* Adjusted styling for the button */
+        .crop-container button {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Hover effect for the button */
+        .crop-container:hover button {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 m-0 p-0">
+    <div class="flex flex-col lg:justify-between md:flex-row p-8">
+        <div class="content-center flex flex-col lg:pl-24">
+            <div class="flex flex-col mb-8">
+                <h1 class="lg:pt-20 text-5xl lg:text-6xl font mt-4 text-left">BEAUTIFUL VINTAGE<br> JEWELLERY from <br><span class="italic">the</span> HOUSE<span class="italic"> of Dior</span></h1>
+            </div>
+            <div class="lg:flex lg:flex-col lg:relative">
+                <div class="items-center order-2 flex-col relative lg:x-[2]">
+                    <div class="crop-container mb-4">
+                        <img class="h-full w-full rounded-lg transition-transform duration-300 ease-in-out transform" src="jewellery.png" alt="product">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="items-start order-3 flex flex-col mt-2">
+                    <p class="font-bold text-lg mb-2 ml-4">Gold Wrist Love</p>
+                    <p class="text-lg ml-4 mb-2">By Ariashi</p>
+                    <p class="text-lg ml-4">$ 750.00 USD</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-first gap-0 md:order-last lg:order-last flex flex-col items-end">
+            <img src="earings_model.webp" alt="Model" class="float-right lg:h-full lg:w-5/6">
+        </div>
+    </div>
+</body>
+
+</html>
+
+
